@@ -11,6 +11,20 @@ Which include:
 - Pavlovia
   - A place for the wide community of researchers in the behavioral sciences to run, share, and explore experiments online. Here's their [official website](https://pavlovia.org/docs/home/about).
 
+An example of the experiment's flow:
+
+``` mermaid
+graph LR
+Aid1([Survey]) -->B(Pretest)
+    B -- Random Assign --> C[Manipulate IV_1]
+    C -->|Group1| D[Manipulate IV_2]
+    C -->|Group2| D[Manipulate IV_2]
+    D -->|Group1| E(Measure DV)
+    D -->|Group2| E(Measure DV)
+    D -->|Group3| E(Measure DV)
+    E --> F(Posttest)
+```
+
 What I've utilized in this project:
 
 -   Python
